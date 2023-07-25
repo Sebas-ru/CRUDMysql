@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/CSS/estilos.css">
+
+    <title>Document</title>
+</head>
+
+<section class="inicio">
+    <div>
+            <h1>Health Colombia</h1>
+
+        <div class="contenido-enlaces">
+            <div class="enlace">
+                <a href="/crear">Formulario Pacientes</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<body>
+    <table>
+        <thead>
+            <div class="tabla-informacion">
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre persona</th>
+                    <th>Apellido persona</th>
+                    <th>Número de cedula</th>
+                    <th>Edad</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                </tr>
+            </div>
+            
+            <!-- COPIA ORIGINAL
+                <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Genero</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+            -->
+        </thead>
+        <tbody>
+                <% consulta01.forEach(x => { %>
+                    <tr>
+                        <th scope="row"> <%= x.id %> </th>
+                        <td> <%= x.nombrePersonas %> </td>
+                        <td> <%= x.apellidoPersonas %> </td>
+                        <td> <%= x.numeroCedulaPersonas %> </td>
+                        <td> <%= x.edadPersonas %> </td>
+                        <td> <%= x.telefonoPersonas %> </td>
+                        <td>
+                            <a href="/editar/<%= x.id %>" class="editar">Editar</a>
+                            <a href="/borrar/<%= x.id %>" class="borrar">Borrar</a>
+                        </td>
+                    </tr>
+                    <%
+                }); %>
+        </tbody>
+
+        <!-- COPIA ORIGINAL
+            <tbody>
+            <% consulta01.forEach(x => { %>
+                <tr>
+                    <th scope="row"> <%= x.id %> </th>
+                    <td> <%= x.nombre %> </td>
+                    <td> <%= x.edad %> </td>
+                    <% if (x.genero == 1) { %>
+                        <td>Mujer</td>
+                        <%} else { %>
+                            <td>Hombre</td>
+                    <% } %>
+                    <td> <%= x.email %> </td>
+                    <td>
+                        <a href="/editar/<%= x.id %>" class="editar">Editar</a>
+                        <a href="/borrar/<%= x.id %>" class="borrar">Borrar</a>
+                    </td>
+                </tr>
+                <%
+            }); %>
+        </tbody>
+        -->    
+
+    </table>
+    <div class="agregar">
+        <a href="/crear">Adicionar</a>
+    </div>
+
+</body>
+</html>

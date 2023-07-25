@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/CSS/estilos.css">
+
+    <title>Crear</title>
+</head>
+<body>
+
+    <section>
+        <form class="formulario" action="/salvar" method="POST">
+            <legend class="titulo-formulario">Formulario de personas</legend>
+  
+            <div class="contenedor">
+                <div class="campos">
+                    <label for="">Ingresa tu nombre</label>
+                    <input type="text" id="nombrePersonas" name="nombrePersonas">
+                </div>
+  
+                <div class="campos">
+                    <label for="">Ingresa tu apellido</label>
+                    <input type="text" id="apellidoPersonas" name="apellidoPersonas">
+                </div>
+  
+                <div class="campos">
+                    <label for="">Ingresa tu número de cédula</label>
+                    <input type="number" id="numeroCedulaPersonas" name="numeroCedulaPersonas" min="1">
+                </div>
+  
+                <div class="campos">
+                    <label for="">Ingresa tu edad</label>
+                    <input type="number" id="edadPersonas" name="edadPersonas" min="1">
+                </div>
+  
+                <div class="campos">
+                    <label for="">Ingresa tu número de teléfono</label>
+                    <input type="number" id="telefonoPersonas" name="telefonoPersonas" min="1">
+                </div>
+            </div>
+
+            <div class="botones-editar">
+                <button type="submit">Guardar</button>
+                <a href="/">Cancelar</a>
+            </div>
+    
+        </form>
+    </section>
+
+    
+</body>
+</html>

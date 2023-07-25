@@ -1,0 +1,158 @@
+/*ESTILOS EN GENERAL*/
+* {
+    padding: 0;
+}
+body {
+    background-color: #0E85B6;
+    /*font-family: 'Raleway', sans-serif;*/
+}
+h1 {
+    font-size: 80px;
+    color: beige;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/*PAGINA DE INICIO*/
+.inicio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*ENLACES*/
+.contenido-enlaces {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.enlace {
+    background-color: #04359ed5;
+    padding: 1rem;
+    margin: 0 1.5rem;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.enlace a{
+    text-decoration: none;
+    color: beige;
+    font-size: 1.7rem;
+
+}
+
+/*FORMULARIOS*/
+.formulario {
+    background-color: #04359ed5;
+    width: 40rem;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.titulo-formulario {
+    font-size: 2.5rem;
+    color: beige;
+    font-weight: 400;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contenedor {
+    text-align: center;
+}
+ 
+ .campos {
+     display: flex;
+     justify-content: space-between;
+     padding: 0.5rem 0;    
+     align-items: center;
+}
+
+.campos select {
+    width: 25.3rem;
+    height: 1.8rem;
+}
+
+.campos label {
+    font-size: 1.2rem;
+    color: rgb(255, 238, 0);
+}
+
+.campos input {
+    width: 25rem;
+    height: 1.8rem;
+    outline: none;
+}
+.campos:focus {
+    border: none;
+}
+
+/*TABLA INFORMACIÓN*/
+table {
+    margin: 0 auto;
+    background-color: #04359ed5;
+    border-radius: 1.5rem;
+}
+th {
+    padding: 1.3rem;
+    color: beige;
+    font-size: 1.6rem;
+}
+td {
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(255, 238, 0);
+    padding: 0.5rem;
+}
+
+
+tbody .editar {
+    text-decoration: none;
+    background-color: #10aa50;
+    padding: 0.8rem;
+    color: beige;
+    border-radius: 1rem;
+}
+
+tbody .borrar {
+    text-decoration: none;
+    background-color: #ff4800;
+    padding: 0.8rem;
+    color: beige;
+    border-radius: 1rem;
+}
+
+/*BOTONES EDITAR*/
+.botones-editar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.botones-editar {
+    width: 60%;
+    padding: 1.8rem 0 0 0;
+}
+
+.botones-editar button {
+    padding: 1rem 2rem;
+    background-color: #10aa50;
+    color: beige;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+}
+.botones-editar a {
+    padding: 1rem 2rem;
+    background-color: #ff4800;
+    text-decoration: none;
+    color: beige;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
