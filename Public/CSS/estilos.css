@@ -31,7 +31,7 @@ h1 {
 .enlace {
     background-color: #04359ed5;
     padding: 1rem;
-    margin: 0 1.5rem;
+    margin: 1rem 1.5rem;
     border-radius: 40px;
     cursor: pointer;
 }

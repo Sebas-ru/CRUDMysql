@@ -26,6 +26,15 @@ server.get('/crear', (req, res) => {
     res.render('create')
 })
 
+/* Creación para doctores
+server.get('/', crud.consultar)
+server.get('/crearDoc', (req, res) => {
+    res.render('createDoc')
+})
+*/
+
+
+
 server.post('/salvar', crud.save)
 
 server.get('/editar/:id', crud.consultarUno)

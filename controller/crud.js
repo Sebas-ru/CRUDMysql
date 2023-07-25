@@ -12,6 +12,19 @@ exports.consultar = (req, res) => {
     })
 }
 
+/* Consultar a doctores
+exports.consultar = (req, res) => {
+    conexion.query('SELECT * FROM info_doctores', (error, consulta) => {
+        if(error){
+            console.log("Error consultando la tabla persona" + error)
+            return
+        }
+        //res.send(consulta)
+        res.render('index', {consulta01: consulta})
+    })
+}
+*/
+
 exports.save = (req, res) => {
     const nombrePersonas = req.body.nombrePersonas
     const apellidoPersonas = req.body.apellidoPersonas

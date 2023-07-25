@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="/CSS/estilos.css">
+
+    <title>Crear</title>
+</head>
+<body>
+
+    <section>
+        <form class="formulario" action="/salvar" method="POST">
+            <legend class="titulo-formulario">Formulario de doctores</legend>
+  
+            <div class="contenedor">
+                <div class="campos">
+                    <label for="">Ingresa tu nombre</label>
+                    <input type="text" id="nombreDoctores" name="nombreDoctores">
+                </div>
+  
+                <div class="campos">
+                    <label for="">Ingresa tu apellido</label>
+                    <input type="text" id="apellidoDoctores" name="apellidoDoctores">
+                </div>
+  
+                <div class="campos">
+                    <label for="">ILista de especialidades</label>
+                </div>
+  
+                <div class="campos">
+                    <label for="">Consultorio</label>
+                    <input type="number" id="consultorio" name="consultorio" min="1">
+                </div>
+  
+                <div class="campos">
+                    <label for="">Correo de contacto</label>
+                    <input type="email" id="correoDoctores" name="correoDoctores">
+                </div>
+            </div>
+
+            <div class="botones-editar">
+                <button type="submit">Guardar</button>
+                <a href="/">Cancelar</a>
+            </div>
+    
+        </form>
+    </section>
+
+    
+</body>
+</html>
